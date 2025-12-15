@@ -1,24 +1,21 @@
-//Unir dos objetos
-//1 Objeto
+//Esto habilita el modo estricto
+"use strict";
+
 const producto = {
     nombre: "Monitor 20 Pulgadas",
     precio: 300,
     disponible: true,
 }
-//2 Objeto
-const medidas = {
-    peso:"1kg",
-    medida: "1m"
-}
 
-console.log(producto)
-console.log(medidas)
+// Con seal sella el objeto solo se pueden modificar las propiedades existentes del objeto
+Object.seal( producto );
 
-//El metodo object.assign agrupa dos objetos en uno solo
-const resultado = Object.assign(producto,medidas);
+producto.disponible = false;
+// producto.imagen = "imagen.jpg";
+delete producto.precio;
 
-//Spread Operatorr o Rest Operator
-const resultado2 = { ...producto, ...medidas }
 
-console.log(resultado);
-console.log(resultado2);
+console.log(producto);
+//Con este codigo podemos ver si un objeto esta congelado
+
+//nota la diferencia entre seal y freeze es que freeze no te deja hacer nada, mientras que seal te deja modificar las llaves existentes de un objeto 
