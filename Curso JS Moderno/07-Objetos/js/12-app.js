@@ -1,0 +1,24 @@
+//Object literal
+
+
+const producto = {
+    nombre: "Monitor 20 Pulgadas",
+    precio: 300,
+    disponible: true,
+}
+
+//Object contructor
+
+// tener cuidado con los nombres en este caso Producto esta en mayuscula si lo escribo con minuscula va tener un conflicto con la variable escrita de primero
+function Producto(nombre,precio) {
+    this.nombre = nombre;
+    this.precio = precio;
+    this.disponible = true;
+}
+
+
+const producto2 = new Producto("Monitor 24 pulgadas",500);
+console.log(producto2);
+
+const producto3 = new Producto("Television", 100);
+console.log(producto3);
