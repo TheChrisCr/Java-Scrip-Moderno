@@ -8,7 +8,7 @@ console.table(meses[2]);
 //Cuanto mide el arreglo
 console.log(meses.length);
 
-//otra forma de acceder a los arreglos
+//otra forma de acceder a los arreglos con let
 for (let i = 0; i < meses.length; i++ ) {
     console.log(meses[0]);
 }
