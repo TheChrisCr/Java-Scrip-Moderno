@@ -29,6 +29,11 @@ const numeros = [10, 20, 30, 40, 50];
 //Se llama a la variable
 // console.log(tercero);
 
+// const [ primero, segundo, ...tercero ] = numeros;
+
+// console.log(tercero)
+
 const [ primero, segundo, ...tercero ] = numeros;
 
 console.log(tercero)
+
