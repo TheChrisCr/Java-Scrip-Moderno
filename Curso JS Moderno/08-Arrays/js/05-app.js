@@ -11,6 +11,7 @@ const producto2 = {
     precio: 800
 }
 
+//esta es una forma imperativa
 carrito.push(producto2);
 carrito.push(producto);
 
@@ -20,8 +21,6 @@ const producto3 = {
 }
 
 carrito.unshift(producto3);
-
-
 
 
 console.table(carrito);
