@@ -6,13 +6,12 @@ const carrito = [
     { nombre: "Tablet lenovo", precio: 100 },
 ]
 
-const nuevoArreglo = carrito.map( function (producto) {
-    return `${producto.nombre} - Precio: ${producto.precio}` ;
-} )
+   //metodo .forEach no crea un nuevo arreglo
+    const nuevoArreglo = carrito.forEach( function(producto) {
+        return `${producto.nombre} - Precio: ${producto.precio}` ;
+    })
 
-const nuevoArreglo2 = carrito.forEach( function (producto) {
-    return `${producto.nombre} - Precio: ${producto.precio}` ;
-} )
-
-console.log(nuevoArreglo)
-console.log(nuevoArreglo2)
+    //metodo .map crea un nuevo arreglo
+    const nuevoArreglo2 = carrito.map( function(producto) {
+        return `${producto.nombre} - Precio: ${producto.precio}` ;
+    })
