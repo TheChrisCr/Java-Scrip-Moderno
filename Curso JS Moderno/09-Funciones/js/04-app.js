@@ -7,3 +7,8 @@ console.log( numero1.toString() ) //Es un metodo
 
 
 
+function sumar() {
+    console.log ( 2 + 2);
+}
+
+sumar()
