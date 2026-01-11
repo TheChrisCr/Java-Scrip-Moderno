@@ -7,9 +7,9 @@ const carrito = [
 ]
 
 
-    const nuevoArreglo = carrito.map( (producto) => `${producto.nombre} - Precio: ${producto.precio}` )
+    const nuevoArreglo1 = carrito.map( (producto) => `${producto.nombre} - Precio: ${producto.precio}` )
     carrito.forEach( (producto) => `${producto.nombre} - Precio: ${producto.precio}` );
 
 
-    console.log(nuevoArreglo);
+    console.log(nuevoArreglo1);
     
