@@ -25,7 +25,7 @@ const metodoPago = 'efectivo';
 //         console.log('Aun no has seleccionado un metodo de pago o metodo de pago no soportado');
 //         break;
 // }
-
+//Llamar a una funcion dentro de un case
 switch(metodoPago) {
     case 'efectivo':
         Pagar()
