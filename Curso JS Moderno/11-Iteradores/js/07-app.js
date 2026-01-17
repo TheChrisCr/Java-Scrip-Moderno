@@ -16,3 +16,5 @@ for( let pendiente of pendientes ) {
 for ( let producto of carrito ) {
     console.log(producto.nombre)
 }
+
+//itera sobre los valores de un arreglo
